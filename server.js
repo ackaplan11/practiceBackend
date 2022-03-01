@@ -29,3 +29,13 @@ app.get('/recipes/details/:recipeName', (req, res) => {
     }
     res.json({})
 })
+
+app.put('/recipes', (req, res) => {
+    const name = req.query.name
+    for (const recipe of data.recipes) {
+        if (name === recipe.name) {
+            return res.status(204) 
+        }
+    }
+    return res.json({error: "recipe does not exist"}).status(404)
+})
