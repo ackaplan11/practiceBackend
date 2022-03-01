@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ackaplan11/practiceBackend/issues"
   },
-  "homepage": "https://github.com/ackaplan11/practiceBackend#readme"
+  "homepage": "https://github.com/ackaplan11/practiceBackend#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
